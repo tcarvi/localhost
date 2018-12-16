@@ -23,4 +23,4 @@
 - **Log files**:
     -  [server_root] / webapp / github.com / [Your_Github_User] / log / [AAMMDD].log  
 
-**Obs.:** Server code must follow instructions written in the repository https://github.com/tcarvi/tserver
+**Obs.:** Server code must follow instructions from https://github.com/tcarvi/tserver
