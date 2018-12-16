@@ -1,4 +1,4 @@
-# tsever WebApp Template
+# tserver WebApp Template
 
 #### tserver [web_app_folders] pattern:
 - **API scripts**:
@@ -21,4 +21,6 @@
 - **PDF files**:
     -  [server_root] / webapp / github.com / [Your_Github_User] / pdf / files.pdf
 - **Log files**:
-    -  [server_root] / webapp / github.com / [Your_Github_User] / log / [AAMMDD].log
+    -  [server_root] / webapp / github.com / [Your_Github_User] / log / [AAMMDD].log  
+
+**Obs.:** Server code must follow instructions written in the repository https://github.com/tcarvi/tserver
