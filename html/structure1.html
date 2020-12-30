@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="utf-8" />
+ <title>Structure for HTML5 webpages</title>
+</head>
+
+<body>
+
+<!-- ********************* -->
+<!-- Structures for layout -->
+<!-- ********************* -->
+
+<section id="header">
+ <img id="headerLeftImg" src="svg/test.svg" width="44" height="44" alt="logo">
+ <span id="headerTitle" class="headerTitle">Title of Header</span> 
+ <button id="outButton" class="outButton">Sair</button>
+</section><!-- end of header -->
+
+<div id="loadingBar" class="hidden">
+ <span class="dot" id="dot1"></span>
+ <span class="dot" id="dot2"></span>
+ <span class="dot" id="dot3"></span>
+ <span class="dot" id="dot4"></span>
+</div> <!-- end of loadingBar -->
+
+<section id="container">
+
+<section id="mutableSections">
+
+<section id="navBanner" class="navBanner">
+ <button id="backButton" class="elementsDisplay backButton"></button>
+ <span id="navTitle" class="navTitle">Nav Title</span> 
+ <button id="editButton" class="elementsDisplay editButton"></button>
+</section> <!-- end of navBanner -->
+
+<section id="section1" class="elementsDisplay mutable">
+
+ <!-- Title -->
+ <h4 class="sectionTitle">Section Title</h4>
+
+ <!-- Structure of ul With select ctLiUno ctLiDuo ctLiTrio ctLiArrow -->
+ <ul class="ctUl">
+  <li class="ctLi">
+   <select name="value" class="ctSelect">
+    <option value="value1">Value 1</option>
+    <option value="value2">Value 2</option>
+    <option value="value3">Value 3</option>
+    <option value="value4">Value 4</option>
+    <option value="value5">Value 5</option>
+    <option value="value6" selected>Value 6</option>
+    <option value="value7">Value 7</option>
+    <option value="value8">Value 8</option>
+    <option value="value9">Value 9</option>
+    <option value="value10">Value 10</option>
+   </select>
+  </li>
+ </ul>
+ <ul class="ctUl">
+  <li class="ctLiUno">
+   <span class="liLeftText">Left Text</span>
+   <span id="idLi1" class="liRightText">Right Text</span>
+  </li>
+  <li class="ctLiDuo">
+   <div>
+    <span class="liLeftText">Left Text</span><br>
+    <span class="liLeftText">Left Text</span>
+   </div>
+   <div>
+    <span id="idLi21" class="liRightText">Right Text</span><br>
+    <span id="idLi22" class="liRightText">Right Text</span>
+   </div>
+  </li>
+  <li class="ctLiTrio">
+   <div>
+    <span class="liLeftText">Left Text</span><br>
+    <span class="liLeftText">Left Text</span><br>
+    <span class="liLeftText">Left Text</span>
+   </div>
+   <div>
+    <span id="id31" class="liRightText">Right Text</span><br>
+    <span id="id32" class="liRightText">Right Text</span><br>
+    <span id="id33" class="liRightText">Right Text</span>
+   </div>
+  </li>
+ </ul>
+ <p>Intermediate text<br>Additional intermediate text</p>
+ <ul class="ctUl">
+  <li class="ctLiArrow">
+   <span>Text with arrow</span>
+  </li>
+ </ul>
+</section><!-- end of section1 -->
+ 
+<article>
+    <p>var name type = expression<br>
+        Either the type or the expression part may be omitted, but not both.<br>
+        If the expression is omitted, the initial value is the zero value for the type, which is zero for numbers, false for booleans, "" for strings, and nil for interfaces and reference types (slice, pointer, map, channel, function).<br>
+        The zero value of an aggregate type like an array or a struct has the zero value of all of its elements or fields.</p>
+    <p>var i, j, k int</p>
+    <p>var b, f, s = true, 2.3, "four"</p>
+</article>
+
+</section><!-- end of mutableSections -->
+
+<button id="button1" class="elementsDisplay ctButton hidden">{botao1}</button>
+<button id="button2" class="elementsDisplay ctButton hidden">{botao2}</button>
+<button id="button3" class="elementsDisplay ctButton hidden">{botao3}</button>
+<button id="button4" class="elementsDisplay ctButton hidden">{botao4}</button>
+<button id="button5" class="elementsDisplay ctButton hidden">{botao5}</button>
+
+
+<footer></footer>
+
+</section><!-- end of container -->
+
+<!-- **************** -->
+<!-- All HTML5 tag structures -->
+<!-- Fonte: https://www.w3schools.com/tags/default.asp -->
+<!-- **************** -->
+
+<!-- Defines the HTML5 document type -->
+<!-- <!doctype html>  -->
+
+<!-- Defines a hyperlink -->
+<a href="http://www.tcarvi.com.br">TCARVI</a>
+<a href="mailto:tcarvi@me.com">Send email</a>
+<a href="tel:+4733378901">+47 333 78 901</a>
+<a href="#section2">Go to Section 2</a>
+<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+<!-- Tag atributes: -->
+<!-- download=filename href=URL hreflang=language_code media=media_query ping=list_of_URLs referrerpolicy=Value rel=Value target=Value type=media_type -->
+<!-- Default CSS Design: -->
+<!-- a:link, a:visited {color: (internal value);text-decoration: underline;cursor: auto;} -->
+<!-- a:link:active, a:visited:active {color: (internal value);} -->
+
+<!-- Defines an abbreviation or an acronym -->
+<abbr title="World Health Organization">WHO</abbr>
+<!-- Default CSS Design: -->
+<!-- abbr {display: inline;} -->
+
+<!-- Defines contact information for the author/owner of a document -->
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<!-- Default CSS Design: -->
+<!-- address {display: block; font-style: italic;} -->
+
+<!-- Tag <area> defines an area inside an image map -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- Tag atributes: -->
+<!-- alt=text coords=coordinates download=filename href=URL hreflang=language_code media=media_query referrerpolicy=VALUE rel=VALUE shape=VALUE target=VALUE type=media_type -->
+<!-- Default CSS Design: -->
+<!-- area {display: none;} -->
+
+<!-- Tag <article> defines an article -->
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+<!-- Default CSS Design: -->
+<!-- article {display: block;} -->
+
+<!-- Defines content aside from the page content -->
+<aside></aside>
+
+<!-- Defines embedded sound content -->
+<audio></audio>
+
+<!-- Defines bold text -->
+<b></b>
+
+<!-- Specifies the base URL/target for all relative URLs in a document
+ -->
+<base></base>
+
+<!-- Isolates a part of text that might be formatted in a different direction from other text outside it -->
+<bdi></bdi>
+
+<!-- Overrides the current text direction -->
+<bdo></bdo>
+
+<!-- Defines a section that is quoted from another source
+ -->
+<blockquote></blockquote>
+
+<!-- Defines the document's body -->
+<!-- <body></body> -->
+
+<!-- Defines a single line break -->
+<br></br>
+
+<!-- Defines a clickable button -->
+<button></button>
+
+<!-- Used to draw graphics, on the fly, via scripting (usually JavaScript) -->
+<canvas></canvas>
+
+<!-- Defines the title of a work -->
+<cite></cite>
+
+<!-- Defines a piece of computer code -->
+<code></code>
+
+<!-- Specifies column properties for each column within a <colgroup> element  -->
+<col></col>
+
+<!-- Specifies a group of one or more columns in a table for formatting -->
+<colgroup></colgroup>
+
+<!-- Adds a machine-readable translation of a given content -->
+<data></data>
+
+<!-- Specifies a list of pre-defined options for input controls -->
+<datalist></datalist>
+
+<!-- Defines a description/value of a term in a description list -->
+<dd></dd>
+
+<!-- Defines text that has been deleted from a document -->
+<del></del>
+
+<!-- Defines additional details that the user can view or hide -->
+<details><details>
+
+<!-- Specifies a term that is going to be defined within the content -->
+<dfn></dfn>
+
+<!-- Defines a dialog box or window -->
+<dialog></dialog>
+
+<!-- Defines a section in a document -->
+<div></div>
+
+<!-- Defines a description list -->
+<dl></dl>
+
+<!-- Defines a term/name in a description list -->
+<dt></dt>
+
+<!-- Defines emphasized text -->
+<em></em>
+
+<!-- Defines a container for an external application -->
+<embed></embed>
+
+<!-- Groups related elements in a form -->
+<fieldset></fieldset>
+
+<!-- Defines a caption for a <figure> element -->
+<figcaption></figcaption>
+
+<!-- Specifies self-contained content -->
+<figure></figure>
+
+<!-- Defines a footer for a document or section -->
+<footer></footer>
+
+<!-- Defines an HTML form for user input -->
+<form></form>
+
+<!-- Defines HTML headings -->
+<h1><h1>
+<h2><h2>
+<h3><h3>
+<h4><h4>
+<h5><h5>
+<h6><h6>
+
+<!-- Contains metadata/information for the document -->
+<!-- <head></head> -->
+
+<!-- Defines a header for a document or section -->
+<header></header>
+
+<!-- Defines a thematic change in the content -->
+<hr>
+
+<!-- Defines the root of an HTML document -->
+<!-- <html></html> -->
+
+<!-- Defines a part of text in an alternate voice or mood -->
+<i></i>
+
+<!-- Defines an inline frame -->
+<iframe></iframe>
+
+<!-- Defines an image -->
+<img></img>
+
+<!-- Defines an input control -->
+<input></input>
+
+<!-- Defines a text that has been inserted into a document -->
+<ins></ins>
+
+<!-- Defines keyboard input -->
+<kbd></kbd>
+
+<!-- Defines a label for an <input> element -->
+<label></label>
+
+<!-- Defines a caption for a <fieldset> element -->
+<legend></legend>
+
+<!-- Defines a list item -->
+<li></li>
+
+<!-- Defines the relationship between a document and an external resource (most used to link to style sheets) -->
+<link></link>
+
+<!-- Specifies the main content of a document -->
+<main></main>
+
+<!-- Defines an image map -->
+<map></map>
+
+<!-- Defines marked/highlighted text -->
+<mark></mark>
+
+<!-- Defines metadata about an HTML document -->
+<meta></meta>
+
+<!-- Defines a scalar measurement within a known range (a gauge) -->
+<meter></meter>
+
+<!-- Defines navigation links -->
+<nav></nav>
+
+<!-- Defines an alternate content for users that do not support client-side scripts -->
+<noscript></noscript>
+
+<!-- Defines a container for an external application -->
+<object></object>
+
+<!-- Defines an ordered list -->
+<ol></ol>
+
+<!-- Defines a group of related options in a drop-down list -->
+<optgroup></optgroup>
+
+<!-- Defines an option in a drop-down list -->
+<option></option>
+
+<!-- Defines the result of a calculation -->
+<output></output>
+
+<!-- Defines a paragraph -->
+<p></p>
+
+<!-- Defines a parameter for an object -->
+<param></param>
+
+<!-- Defines a container for multiple image resources -->
+<picture></picture>
+
+<!-- Defines preformatted text -->
+<pre></pre>
+
+<!-- Represents the progress of a task -->
+<progress></progress>
+
+<!-- Defines a short quotation -->
+<q></q>
+
+<!-- Defines what to show in browsers that do not support ruby annotations -->
+<rp></rp>
+
+<!-- Defines an explanation/pronunciation of characters (for East Asian typography) -->
+<rt></rt>
+
+<!-- Defines a ruby annotation (for East Asian typography) -->
+<ruby></ruby>
+
+<!-- Defines text that is no longer correct -->
+<s></s>
+
+<!-- Defines sample output from a computer program -->
+<samp></samp>
+
+<!-- Defines a client-side script -->
+<script></script>
+
+<!-- Defines a section in a document -->
+<section></section>
+
+<!-- Defines a drop-down list -->
+<select></select>
+
+<!-- Defines smaller text -->
+<small></small>
+
+<!-- Defines multiple media resources for media elements (<video> and <audio>) -->
+<source></source>
+
+<!-- Defines a section in a document -->
+<span></span>
+
+<!-- Defines important text -->
+<strong></strong>
+
+<!-- Defines style information for a document -->
+<style></style>
+
+<!-- Defines subscripted text -->
+<sub></sub>
+
+<!-- Defines a visible heading for a <details> element -->
+<summary></summary>
+
+<!-- Defines superscripted text -->
+<sup></sup>
+
+<!-- Defines a container for SVG graphics -->
+<svg></svg>
+
+<!-- Defines a table -->
+<table></table>
+
+<!-- Groups the body content in a table -->
+<tbody></tbody>
+
+<!-- Defines a cell in a table -->
+<td></td>
+
+<!-- Defines a container for content that should be hidden when the page loads -->
+<template></template>
+
+<!-- Defines a multiline input control (text area) -->
+<textarea></textarea>
+
+<!-- Groups the footer content in a table -->
+<tfoot></tfoot>
+
+<!-- Defines a header cell in a table -->
+<th></th>
+
+<!-- Groups the header content in a table -->
+<thead></thead>
+
+<!-- Defines a specific time (or datetime) -->
+<time></time>
+
+<!-- Defines a title for the document -->
+<title></title>
+
+<!-- Defines a row in a table -->
+<tr></tr>
+
+<!-- Defines text tracks for media elements (<video> and <audio>) -->
+<track></track>
+
+<!-- Defines some text that is unarticulated and styled differently from normal text -->
+<u></u>
+
+<!-- Defines an unordered list -->
+<ul></ul>
+
+<!-- Defines a variable -->
+<var></var>
+
+<!-- Defines embedded video content -->
+<video></video>
+
+<!-- Defines a possible line-break -->
+<wbr></wbr>
+
+</body>
+
+</html>
